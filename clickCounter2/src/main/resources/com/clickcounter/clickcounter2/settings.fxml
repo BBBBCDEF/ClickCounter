@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clickcounter.clickcounter2.SettingsController">
+   <children>
+      <Pane prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #e0ffff;">
+         <children>
+            <TextField fx:id="timeTextField" layoutY="13.0" prefWidth="185.0" />
+            <Label alignment="CENTER" layoutX="220.0" prefHeight="50.0" prefWidth="75.0" text="Time">
+               <font>
+                  <Font name="Seoge UI" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="50.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #fff0f5;">
+         <children>
+            <CheckBox fx:id="checkBoxNoLimit" layoutX="50.0" layoutY="13.0" mnemonicParsing="false" onAction="#onCheckBoxNoLimit" prefHeight="25.0" prefWidth="200.0" text="Enable no limit">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </Pane>
+      <Pane layoutY="100.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #e0ffff;">
+         <children>
+            <CheckBox fx:id="checkBoxRealTime" layoutX="50.0" layoutY="13.0" mnemonicParsing="false" onAction="#onCheckBoxRealTime" prefHeight="20.0" prefWidth="185.0" text="Real-time speed reflesh">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </Pane>
+      <Pane layoutY="150.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #fff0f5;">
+         <children>
+            <ChoiceBox fx:id="languageChoiceBox" layoutY="13.0" prefHeight="25.0" prefWidth="185.0" />
+            <Label alignment="CENTER" layoutX="220.0" prefHeight="50.0" prefWidth="75.0" text="Language">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="200.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #e0ffff;">
+         <children>
+            <Button fx:id="applyButton" layoutX="90.0" layoutY="13.0" mnemonicParsing="false" onAction="#onApplyButton" text="Apply" />
+            <Button fx:id="cancelButton" layoutX="160.0" layoutY="13.0" mnemonicParsing="false" onAction="#onCancelButton" text="Cancel" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
